@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00825d4c-0533-4c3b-a8b0-6a86f2d3cdb7" name="Changes" comment="stack implemented">
+    <list default="true" id="00825d4c-0533-4c3b-a8b0-6a86f2d3cdb7" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.testing.exceptionExpression">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Assignment" />
@@ -63,21 +63,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testing" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testing.advancedExpression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="testing" />
       <option name="METHOD_NAME" value="advancedExpression" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testing.emptyExpression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Assignment" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testing" />
-      <option name="METHOD_NAME" value="emptyExpression" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testing.exceptionExpression" />
-        <item itemvalue="JUnit.testing.simpleExpression" />
-        <item itemvalue="JUnit.testing.advancedExpression" />
-        <item itemvalue="JUnit.testing.emptyExpression" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.testing.exceptionExpression" />
+        <item itemvalue="JUnit.testing.advancedExpression" />
+        <item itemvalue="JUnit.testing.simpleExpression" />
+        <item itemvalue="JUnit.testing" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +125,7 @@
       <workItem from="1677408040733" duration="448000" />
       <workItem from="1677429087339" duration="685000" />
       <workItem from="1677498395583" duration="29000" />
-      <workItem from="1677854200325" duration="3629000" />
+      <workItem from="1677854200325" duration="6725000" />
     </task>
     <task id="LOCAL-00001" summary="stack implemented">
       <created>1677350409950</created>
@@ -135,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677350409950</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1677863688423</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677863688423</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +160,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="stack implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="stack implemented" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>

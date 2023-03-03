@@ -9,29 +9,30 @@ public class Stack<T>{
     public Stack() {
         stack = new LinkedList();
     }
-    public int evaluateExpression(ArrayList<Object> tokens) throws Exception {
+    public int evaluateExpression(ArrayList<Token> tokens) throws Exception {
         for (int i = 0; i < tokens.size(); i++) {
-            Object obj = tokens.get(i);
-            if (obj instanceof Integer) {
-                stack.push(obj);
-            } else if (obj.equals("+")) {
+            Token token = tokens.get(i);
+            if (token instanceof Operand) {
+                stack.push(token.get());
+            } else if (token.get().equals('+')) {
                 int n1 = (int) stack.pop();
                 int n2 = (int) stack.pop();
                 stack.push(n1 + n2);
-            } else if (obj.equals("-")) {
+            } else if (token.get().equals('-')) {
                 int n1 = (int) stack.pop();
                 int n2 = (int) stack.pop();
                 stack.push(n1 - n2);
-            } else if (obj.equals("*")) {
+            } else if (token.get().equals('*')) {
                 int n1 = (int) stack.pop();
                 int n2 = (int) stack.pop();
                 stack.push(n1 * n2);
-            } else if (obj.equals("/")) {
+            } else if (token.get().equals('/')) {
                 int n1 = (int) stack.pop();
                 int n2 = (int) stack.pop();
                 stack.push(n1 / n2);
             }
-            throw new Exception("incorrect input");
+            else {  throw new Exception("incorrect input");}
+
         }
         return (int) stack.get(0);
     }
