@@ -1,47 +1,23 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("1. Stack of integers");
         stackOfIntegers();
-
-        System.out.println("\n2. Stack of Strings");
-        stackOfIStrings();
-    }
-    private static void stackOfIStrings() {
-
-        Stack<String> stack = new Stack();
-        stack.push("Five");
-        stack.push("Four");
-        stack.push("Three");
-        stack.push("Two");
-        stack.push("One");
-
-        System.out.println("1.1 Size of stack after push operations: " + stack.size());
-
-        System.out.printf("1.2. Pop elements from stack : ");
-        while (!stack.isEmpty()) {
-            System.out.printf(" %s", stack.pop());
-        }
-
-        System.out.println("\n1.3. Size of stack after pop operations : " + stack.size());
     }
 
     private static void stackOfIntegers() {
 
-        Stack<Integer> stack = new Stack();
-        stack.push(5);
-        stack.push(4);
-        stack.push(3);
-        stack.push(2);
-        stack.push(1);
-
+        Stack<Object> stack = new Stack();
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(3);
+        list.add(4);
+        list.add("+");
         System.out.println("2.1. Size of stack after push operations: " + stack.size());
-        System.out.printf("2.2. Pop elements from stack : ");
 
-        while (!stack.isEmpty()) {
-            System.out.printf(" %d", stack.pop());
-        }
+//        System.out.println("reslut is "+stack.evaluateExpression(list));
 
         System.out.println("\n3.3 Size of stack after pop operations : " + stack.size());
 }
